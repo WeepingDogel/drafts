@@ -41,7 +41,8 @@ int main(){
     if(n2 > n4){
         swap(p2,p4);
     }
-    if(n3 > n4){
+    if(n3 >
+     n4){
         swap(p3,p4);
     }
     printf("\n %d %d %d %d",n1,n2,n3,n4);
