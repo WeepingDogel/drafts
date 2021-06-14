@@ -15,22 +15,20 @@ int main()
         switch ((int)(score / 10))
         {
         case 10:
+        case 9:
             grade = 'A';
             break;
-        case 9:
+        case 8:
             grade = 'B';
             break;
-        case 8:
+        case 7:
             grade = 'C';
             break;
-        case 7:
+        case 6:
             grade = 'D';
             break;
-        case 6:
-            grade = 'E';
-            break;
         default:
-            grade = 'F';
+            grade = 'E';
             break;
         }
         printf("The score %.2f is %c \n",score,grade);
