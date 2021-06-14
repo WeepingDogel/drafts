@@ -1,9 +1,9 @@
-#include <stdio.h>
 /*
 分数判断成绩 ABCDEF
 
 By WeepingDogel
 */
+#include <stdio.h>
 int main()
 {
     float score;
