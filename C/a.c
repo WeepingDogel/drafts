@@ -31,7 +31,7 @@ int main()
             grade = 'E';
             break;
         }
-        printf("The score %.2f is %c \n",score,grade);
+        printf("The score %.2f is grade %c .\n",score,grade);
     }
     else
     {
