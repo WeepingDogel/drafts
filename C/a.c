@@ -37,4 +37,5 @@ int main()
     {
         printf("The score %.2f is an Error Value!", score);
     }
+    return 0;
 }
