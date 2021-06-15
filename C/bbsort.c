@@ -24,7 +24,7 @@ void sort(int arr[],int len)
 int main()
 {
     int n1,n2,n3,n4;
-    printf("type four numbers:");
+    printf("type four numbers:\n");
     scanf("%d%d%d%d",&n1,&n2,&n3,&n4);
     int arr[] = {n1,n2,n3,n4};
     int len;
