@@ -1,3 +1,8 @@
+/*
+数学运算
+
+By WeepingDogel
+*/
 #include<stdio.h>
 #include<math.h>
 #define PI 3.14
