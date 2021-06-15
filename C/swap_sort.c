@@ -25,7 +25,7 @@ int main(){
     p2 = &n2;
     p3 = &n3;
     p4 = &n4;
-    //printf("四个指针变量地址:\n%p\n%p\n%p\n%p\n",p1,p2,p3,p4);
+    printf("四个指针变量地址:\n%p\n%p\n%p\n%p\n",p1,p2,p3,p4);
     if (n1 > n2){
         swap(p1,p2);
     }

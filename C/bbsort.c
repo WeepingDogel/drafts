@@ -27,8 +27,7 @@ int main()
     printf("type four numbers:\n");
     scanf("%d%d%d%d",&n1,&n2,&n3,&n4);
     int arr[] = {n1,n2,n3,n4};
-    int len;
-    len = (int)sizeof(arr) / sizeof(*arr);
+    int len = (int)sizeof(arr) / sizeof(*arr);
     sort(arr,len);
     int i;
     for(i = 0; i < len; i++)
