@@ -6,6 +6,7 @@ Python 学习笔记——文件操作
 
 import os
 import datetime
+
 def sign():
     # 程序标识
     print(
@@ -20,6 +21,7 @@ def sign():
 ╱╱╱╱╱╱╱╱╱╱╱╰╯╱╱╱╱╱╰━━╯╱╱╱╱╱╱╰━━╯
 '''
     )
+
 def filecrt(filename):
     # 文件创建
     if os.path.exists(filename): #检查文件是否存在
@@ -30,6 +32,7 @@ def filecrt(filename):
         f.close()
         print(str(datetime.datetime.now()) + ": 已创建文件: " + filename)
         return 1
+
 def filewrt(filename):
     fruits = ['apple', 'banana', 'strawbarry','orange'] # 给出要写的内容
     # 文件写入操作
@@ -38,6 +41,7 @@ def filewrt(filename):
         f.write(fruit + '\n')
         print(str(datetime.datetime.now()) + ": 已写入" + fruit)
     f.close()
+
 def filedel(filename):
     # 删除文件操作
     if os.path.exists(filename):
@@ -45,12 +49,15 @@ def filedel(filename):
         print(str(datetime.datetime.now()) + ": 已删除" + filename)
     else:
         print(str(datetime.datetime.now()) + filename + "不存在")
+
 def fileread(filename):
     print(str(datetime.datetime.now()) + ": 读取中.." )
     f = open(filename,'r')
     print("-" * 5 + "文件内容" + "-" * 5 + "\n")
     print(f.read())
     print("-" * 5 + "文件内容" + "-" * 5 + "\n")
+
+
 sign()
 if filecrt("test.txt") == 0:
     fileread("test.txt")
@@ -59,3 +66,4 @@ else:
     filewrt("test.txt")
     fileread("test.txt")
     filedel("test.txt")
+
